@@ -1,0 +1,30 @@
+{
+    "meeting_information": {
+        "lecture": {
+            "day": "LEC Tues, Thur",
+            "time": "08:30AM - 09:50AM",
+            "place": "RICH, Room 2529"
+        },
+        "lab": {
+            "day": "LAB Mon",
+            "time": "11:30AM - 01:20PM",
+            "place": "THRN, Room 2420"
+        },
+        "seminar": {},
+        "exam": {}
+    },
+    "term": "Fall 2022",
+    "status": "Closed",
+    "section_name_and_title": "CIS*3760*0101 (7263) Software Engineering",
+    "location": "Guelph",
+    "faculty": "G. Klotz",
+    "available_capacity": "0 / 32",
+    "credits": "0.75",
+    "ceus": "",
+    "academic_level": "Undergraduate",
+    "subject": "CIS",
+    "course_code": "3760",
+    "section_number": "0101",
+    "uid": "7263",
+    "course_name": "Software Engineering"
+}

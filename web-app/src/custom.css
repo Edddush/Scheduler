@@ -1,0 +1,298 @@
+.app {
+  background-color: #FAF9F6;
+  color: black;
+  min-height: 100vh;
+}
+
+.content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-centering {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* header */
+#header {
+  
+  height: 8em;
+  flex-direction: row;
+  border-bottom: 5px black solid;
+  background-image: linear-gradient(to right, #42a4f5, rgb(255, 255, 255));
+}
+
+.header-button {
+  margin: 1em;
+  min-width: 6em;
+}
+
+/* scheduler */
+#Scheduler {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Scheduler-inner {
+  border: 5px black solid;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+/* temp component */
+#ascii-art {
+  text-align: center;
+  font-family: monospace;
+  white-space: pre;
+  font-weight: bolder;
+  font-size: large;
+}
+
+#temp-header {
+  font-weight: bold;
+}
+
+#temp-button {
+  margin: 0.5em 0;
+}
+#temp-num {
+  text-align: center;
+}
+
+.temp-component {
+  display: flex;
+  flex-direction: column;
+}
+
+/* search */
+/*#search {
+}*/
+
+#search-button {
+  min-width: 6em;
+}
+
+#search-input {
+  width: 300px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+#search-output {
+  height: 6em;
+  padding-top: 2em;
+  font-size: 35px;
+  text-align: center;
+}
+
+.pagination {
+  padding: 8px 0px;
+  border-radius: 0.25rem;
+}
+
+.page-link {
+  position: relative;
+  color: #fefefe;
+  background-color: rgb(32, 30, 30);
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.page-link:focus,
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #747474;
+  border-color: #000000;
+}
+
+.page-item.disabled .page-link,
+.page-item.disabled .page-link:focus,
+.page-item.disabled .page-link:hover {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+#search-input-group {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+}
+
+/* wiki */
+#wiki {
+  padding: 5em 15%;
+}
+
+#wiki-title {
+  text-align: center;
+}
+
+.search-box {
+  font-size: 20px;
+  padding: 3px 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 370px;
+}
+
+#course_header {
+  margin-top: 25px;
+  display: inline;
+}
+
+#course_header_term{
+  padding: 3px;
+  text-align: left;
+}
+/*Multiple Schedules*/
+
+.modify-schedule-button{
+  border-radius: 90%;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  font-family: auto;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+
+#multiple-schedules-buttons{
+  margin: 24px 0px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#schedules-button-group{
+  height:fit-content;
+  width:80%;
+  display: flex;
+  flex-direction: row;
+}
+#schedule-select-term{
+  vertical-align: center;
+  padding-top:10px;
+}
+
+#modify-schedule-button-group{
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule-button{
+  overflow:hidden;
+  width:160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.btn-success {
+  background-color: grey;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 5px;
+  
+  --bs-btn-bg: #000000;
+  --bs-btn-border-color: #000000;
+  
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 60,153,110;
+  
+  --bs-btn-active-bg: #000000;
+  --bs-btn-active-border-color: #000000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  
+  --bs-btn-disabled-bg: #000000;
+  --bs-btn-disabled-border-color: #000000;
+}
+
+.btn-light {
+  border-radius: 0%;
+}
+
+#temp-button {
+  width: 180px;
+}
+
+.tooltip {
+  justify-content: center;
+}
+
+.icon-center{
+  display: flex;
+}
+
+.upload-button{
+  display: flex;
+  
+}
+
+.schedule-name-input{
+  width: 450px;
+  padding: 12px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-subsection-headers{
+  font-weight: bold;
+}
+
+.cleared-schedule-switch{
+  transform: scale(1.8);
+  padding-left: 144px;
+  padding-bottom: 15px;
+  padding-top:10px;
+}
+
+.modal-header{
+  height: 6em;
+  flex-direction: row;
+  border-bottom: 2px black solid;
+  background-image: linear-gradient(to right, #42a4f5, rgb(255, 255, 255));
+}
+
+.modal-colour-picker{
+  transform: scale(1.1);
+  width: 80px;
+}
+
+.warning-import-schedule{
+  font-size: small;
+  padding-top: 7px;
+}
+
+.courses-selected-table{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+

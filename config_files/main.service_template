@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn instance to serve cis3760 project
+After=network.target
+
+[Service]
+User=USER_VAR
+Group=www-data
+WorkingDirectory=CURRDIR
+ExecStart=GUNICORNDIR --bind unix:main.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target

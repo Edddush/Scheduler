@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with no props 1`] = `
+<div
+  className="card-body"
+  id="search"
+>
+  <div
+    id="search-input-group"
+  >
+    <input
+      className="search-box"
+      id="courseTitle"
+      onChange={[Function]}
+      placeholder="Enter a Course"
+      type="text"
+    />
+    <input
+      className="search-box"
+      id="subject"
+      onChange={[Function]}
+      placeholder="Enter a Subject Code"
+      type="text"
+    />
+    <input
+      className="search-box"
+      id="courseCode"
+      onChange={[Function]}
+      placeholder="Enter a Course Code"
+      type="text"
+    />
+  </div>
+  <h4 />
+</div>
+`;

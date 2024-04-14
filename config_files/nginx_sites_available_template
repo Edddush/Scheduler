@@ -1,0 +1,27 @@
+server {
+        listen 443 ssl default_server;
+        listen [::]:443 ssl default_server;
+        include snippets/self-signed.conf;
+        include snippets/ssl-params.conf;
+
+	root /etc/nginx/build;
+	index index.html;
+	
+	location / {
+		try_files $uri /index.html;
+	}
+
+        location /api {
+		add_header 'Access-Control-Allow-Origin' http://unix:CURRDIR/main.sock;
+                include proxy_params;
+                proxy_pass http://unix:CURRDIR/main.sock;
+        }
+}
+
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    return 301 https://$host$request_uri;
+}
